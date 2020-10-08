@@ -1,0 +1,155 @@
+.header {
+	max-height: 720px;
+	background-image: url("../images/bg-header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 26px;
+}
+
+.mobile__logo {
+	display: none;
+}
+
+.menu__list {
+	&-item {
+		display: inline-block;
+		@extend %roboto-medium;
+		font-size: 18px;
+		line-height: 21px;
+		color: #fff;
+
+		&+.menu__list-item {
+			margin-left: 40px;
+		}
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+}
+
+.mobile__btn {
+	display: none;
+	width: 26px;
+}
+
+.header__phone {
+	@extend %roboto-bold;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #fff;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.mobile__box {
+	display: none;
+}
+
+.header__middle {
+	margin-top: 39px;
+	text-align: center;
+}
+
+.header__middle-title {
+	width: 608px;
+	margin: 0 auto;
+	@extend %notoSerif-bold;
+	font-size: 50px;
+	line-height: 68px;
+	color: #FDFFF1;
+}
+
+.header__middle-link {
+	margin-top: 58px;
+	display: inline-block;
+	padding: 26px 70px;
+	@extend %roboto-bold;
+}
+
+.header__middle-list {
+	margin-top: 60px;
+}
+
+.header__middle-item {
+	position: relative;
+	display: inline-block;
+	padding-left: 34px;
+	@extend %roboto-medium;
+	font-size: 22px;
+	line-height: 26px;
+	color: #fff;
+
+	&+.header__middle-item {
+		margin-left: 57px;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 23px;
+		height: 22px;
+		background-color: #FFC01D;
+		border-radius: 50%;
+		left: 0;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		background-image: url("../images/checkbox.svg");
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 15px;
+		left: 4px;
+	}
+}
+
+.header__bottom {
+	max-width: 905px;
+	margin: 0 auto;
+	margin-top: 67px;
+	text-align: center;
+	padding-top: 42px;
+	padding-bottom: 57px;
+	background: #F6FFE8;
+	box-shadow: 0px 10px 34px rgba(6, 49, 88, 0.07);
+	border-radius: 7px;
+}
+
+.header__bottom-title {
+	@extend %notoSerif-bold;
+	font-size: 20px;
+	line-height: 127.2%;
+	color: $black;
+	margin-bottom: 32px;
+}
+
+.header__bottom-input {
+	width: 233px;
+	height: 54px;
+	border: 1px solid rgba($color: #000, $alpha: .25);
+	border-radius: 100px;
+	padding: 0 35px;
+	background-color: transparent;
+	@extend %roboto-regular;
+	font-size: 16px;
+
+	&+.header__bottom-input {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+}

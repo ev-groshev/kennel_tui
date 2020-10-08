@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	position: relative;
+	color: $black;
 }
 
 ul,
@@ -33,10 +34,40 @@ a {
 	color: inherit;
 }
 
-ul, li {
+ul,
+li {
 	list-style: none;
 }
+
 button:focus,
 input:focus {
 	outline: transparent;
+}
+
+.bg__grad {
+	background: linear-gradient(180deg, #F6FFE8 19.36%, rgba(246, 255, 232, 0) 100%);
+	/* 	transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.button {
+
+	padding: 17px 50px;
+	background: #FFD25D;
+	border: none;
+	border-radius: 100px;
+	@extend %roboto-bold;
+	font-size: 16px;
+	line-height: 127.2%;
+	box-shadow: 0 3px 0 #D7AA35;
+	transition: all .3s;
+
+	&:hover {
+		background: #ebbb44;
+	}
 }
