@@ -44,10 +44,14 @@ input:focus {
 	outline: transparent;
 }
 
-.bg__grad {
-	background: linear-gradient(180deg, #F6FFE8 19.36%, rgba(246, 255, 232, 0) 100%);
-	/* 	transform: matrix(1, 0, 0, -1, 0, 0); */
+/* .bg__grad {
+	background: linear-gradient(180deg, #F6FFE8 19.36%, rgba(245, 251, 235, 0) 100%);
 }
+ */
+/* .bg__grad--backwards {
+	background: linear-gradient(-180deg, #F6FFE8 19.36%, rgba(245, 251, 235, 0) 100%);
+
+} */
 
 .container {
 	max-width: 1330px;
@@ -70,4 +74,11 @@ input:focus {
 	&:hover {
 		background: #ebbb44;
 	}
+}
+
+.title {
+	@extend %notoSerif-bold;
+	font-size: 30px;
+	line-height: 41px;
+	text-align: center;
 }

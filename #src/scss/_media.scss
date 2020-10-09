@@ -132,6 +132,14 @@
 			margin-left: 0;
 		}
 	}
+
+	.kennel-inside {
+		padding-top: 215px;
+	}
+
+	.kennel-inside__title {
+		margin-top: 75px;
+	}
 }
 
 @media (max-width: 550px) {
@@ -155,5 +163,13 @@
 		&+.header__middle-item {
 			margin-left: 0;
 		}
+	}
+}
+
+@media (max-width: 499px) {
+
+	.button-next,
+	.button-prev {
+		display: none;
 	}
 }

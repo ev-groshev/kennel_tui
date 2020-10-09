@@ -10,9 +10,60 @@
 </head>
 
 <body>
-	<div class="bg__grad">
-		@@include("components/_header.html")
 
+	@@include("components/_header.html")
+	<div class="bg__grad bg__grad--backwards">
+		<section class="kennel-inside">
+			<div class="container">
+				<div class="kennel-inside__title title">
+					Посмотрите на питомник изнутри
+				</div>
+
+				<div class="kennel-inside__slide">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
+							</div>
+							<div class="swiper-slide kennel-inside__item">
+								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+							</div>
+
+						</div>
+
+						<div class="kennel-inside__nav">
+							<div class="button-prev"></div>
+							<div class="button-next"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
 	</div>
 
 	@@include("components/_footer.html")
