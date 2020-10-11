@@ -344,3 +344,87 @@
 		margin-bottom: 40px;
 	}
 }
+
+/* planting */
+.planting {
+	padding-bottom: 84px;
+}
+
+.planting__title {
+	text-align: left;
+	margin-bottom: 45px;
+}
+
+.planting__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.planting__item {
+	width: 312px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background: #F6FFE8;
+	border: 1px solid #EBEBEB;
+	box-shadow: 0px 14px 30px rgba(2, 15, 50, 0.05);
+	padding: 40px 42px 205px;
+
+	&-title {
+		@extend %roboto-bold;
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	&-text {
+		margin-top: 21px;
+		@extend %roboto-regular;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+	position: relative;
+}
+
+.item-1::after,
+.item-2::after,
+.item-3::after,
+.item-4::after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 20px;
+}
+
+.item-1::after {
+	background-image: url("../images/planting-1.png");
+	width: 258px;
+	height: 189px;
+}
+
+.item-2::after {
+	background-image: url("../images/planting-2.png");
+	width: 286px;
+	height: 191px;
+}
+
+.item-3::after {
+	background-image: url("../images/planting-3.png");
+	width: 311px;
+	height: 332px;
+}
+
+.item-4::after {
+	background-image: url("../images/planting-4.png");
+	width: 306px;
+	height: 218px;
+}
