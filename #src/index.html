@@ -12,60 +12,60 @@
 <body>
 
 	@@include("components/_header.html")
-	<div class="bg__grad bg__grad--backwards">
-		<section class="kennel-inside">
-			<div class="container">
-				<div class="kennel-inside__title title">
-					Посмотрите на питомник изнутри
-				</div>
 
-				<div class="kennel-inside__slide">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
+	<section class="kennel-inside">
+		<div class="container">
+			<div class="kennel-inside__title title">
+				Посмотрите на питомник изнутри
+			</div>
 
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
-							</div>
-							<div class="swiper-slide kennel-inside__item">
-								<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
-							</div>
+			<div class="kennel-inside__slide">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
 
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
 						</div>
-
-						<div class="kennel-inside__nav">
-							<div class="button-prev"></div>
-							<div class="button-next"></div>
-
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
 						</div>
-						<div class="swiper-pagination"></div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-1.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-2.jpg" alt="">
+						</div>
+						<div class="swiper-slide kennel-inside__item">
+							<img class="kennel-inside__img" src="images/content/slide-3.jpg" alt="">
+						</div>
 
 					</div>
-				</div>
 
+					<div class="kennel-inside__nav">
+						<div class="button-prev"></div>
+						<div class="button-next"></div>
+
+					</div>
+					<div class="swiper-pagination"></div>
+
+				</div>
 			</div>
-		</section>
-	</div>
+
+		</div>
+	</section>
+
 	<section class="products">
 		<div class="container">
 			<div class="products__title title">Каталог туй</div>
@@ -118,7 +118,19 @@
 			</div>
 		</div>
 	</section>
-
+	<div class="bg__grad">
+		<section class="question">
+			<div class="container">
+				<div class="question__title title">Есть вопрос? <span>Ответим через 36 секунд</span></div>
+				<div class="question__subtitle">Оставьте заявку и наш специалист проконсультирует вас</div>
+				<form class="question__form">
+					<input class="question-input" type="text" placeholder="Имя">
+					<input class="question-input" type="tel" placeholder="Телефон">
+					<button class="question__btn button" type="submit">Оставить заявку</button>
+				</form>
+			</div>
+		</section>
+	</div>
 	@@include("components/_footer.html")
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

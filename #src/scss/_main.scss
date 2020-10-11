@@ -138,7 +138,8 @@
 	margin-bottom: 32px;
 }
 
-.header__bottom-input {
+.header__bottom-input,
+.question-input {
 	width: 233px;
 	height: 54px;
 	border: 1px solid rgba($color: #000, $alpha: .25);
@@ -148,7 +149,8 @@
 	@extend %roboto-regular;
 	font-size: 16px;
 
-	&+.header__bottom-input {
+	&+.header__bottom-input,
+	+.question-input {
 		margin-left: 25px;
 		margin-right: 25px;
 	}
@@ -323,4 +325,22 @@
 .products__btn {
 	display: inline-block;
 
+}
+
+/* question */
+.question {
+	margin-bottom: 94px;
+	text-align: center;
+	padding-top: 70px;
+
+	&__title {
+		margin-bottom: 37px;
+	}
+
+	&__subtitle {
+		@extend %roboto-regular;
+		font-size: 20px;
+		line-height: 23px;
+		margin-bottom: 40px;
+	}
 }
