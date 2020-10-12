@@ -428,3 +428,152 @@
 	width: 306px;
 	height: 218px;
 }
+
+/* clients-say */
+.clients-say {
+	padding-top: 70px;
+	padding-bottom: 116px;
+}
+
+.clients-say__title {
+	margin-bottom: 60px;
+}
+
+.clients__slider {
+	max-width: 956px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.client-say__slider {
+	max-width: 796px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 20px;
+
+}
+
+.client-say__slider .swiper-slide {
+	background-color: #fff;
+	box-shadow: 0px 14px 60px rgba(2, 15, 50, 0.1);
+	border-radius: 20px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.clients-say__item {
+	margin: 46px 35px;
+
+	&-inner {
+		display: flex;
+
+	}
+
+	&-img {
+		max-width: 356px;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	&-content {
+		margin-left: 39px;
+	}
+
+	&-box {
+		display: flex;
+		align-items: center;
+
+	}
+
+	&-avatar {
+		border-radius: 50%;
+		width: 56px;
+		height: 56px;
+		margin-right: 18px;
+	}
+
+	&-name {
+		@extend %roboto-bold;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	&-title {
+		margin-top: 22px;
+		@extend %roboto-medium;
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	&-text {
+		@extend %roboto-regular;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	&-date {
+		margin-top: 23px;
+		@extend %roboto-regular;
+		font-size: 16px;
+		line-height: 19px;
+		color: rgba(0, 0, 0, 0.2);
+	}
+}
+
+.client-say__slider .button-next {
+	position: absolute;
+	background-color: #FFD25D;
+	box-shadow: 2px 0px #d7aa35;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	border-radius: 50%;
+	width: 43px;
+	height: 43px;
+	right: -60px;
+	top: 50%;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 8px solid transparent;
+		border-left: 10px solid #fff;
+		border-bottom: 8px solid transparent;
+		top: 12px;
+		left: 19px;
+		cursor: pointer;
+	}
+}
+
+.client-say__slider .button-prev {
+	position: absolute;
+	background-color: #FFD25D;
+	box-shadow: 2px 0px #d7aa35;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	border-radius: 50%;
+	width: 43px;
+	height: 43px;
+	left: -60px;
+	top: 50%;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 8px solid transparent;
+		border-right: 10px solid #fff;
+		border-bottom: 8px solid transparent;
+		top: 12px;
+		left: 16px;
+		cursor: pointer;
+	}
+
+}
+
+.client-say__slider .swiper-pagination {
+	display: none;
+}
