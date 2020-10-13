@@ -273,6 +273,22 @@
 		font-size: 22px;
 		line-height: 30px;
 	}
+
+	.mapping__content {
+		right: 10px;
+		top: 300px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.mapping__content-logo {
+		margin-bottom: 37px;
+	}
+
+	.mapping__content-address {
+		width: 180px;
+	}
+
 }
 
 @media (max-width: 550px) {
@@ -329,6 +345,10 @@
 	}
 
 	.clients-say {
-		padding-bottom: 50px;
+		padding-bottom: 80px;
+	}
+
+	.mapping__content {
+		padding: 30px 25px;
 	}
 }
