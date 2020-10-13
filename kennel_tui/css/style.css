@@ -642,6 +642,7 @@ input:focus {
 
 .clients-say__item-content {
   margin-left: 39px;
+  max-width: 326px;
 }
 
 .clients-say__item-box {
@@ -1138,6 +1139,7 @@ input:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
   }
 
   .clients-say__item-box {
